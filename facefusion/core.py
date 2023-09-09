@@ -58,6 +58,8 @@ def parse_args() -> None:
 
 	args = program.parse_args()
 
+	args.source_path = '/content/drive/MyDrive/source/source.jpeg'
+	args.target_path = '/content/drive/MyDrive/source/target.mp4'
 	facefusion.globals.source_path = args.source_path
 	facefusion.globals.target_path = args.target_path
 	facefusion.globals.output_path = normalize_output_path(facefusion.globals.source_path, facefusion.globals.target_path, args.output_path)
